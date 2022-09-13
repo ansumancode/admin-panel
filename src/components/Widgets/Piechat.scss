@@ -1,0 +1,109 @@
+.updateCardsPieChat {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+
+    .cardHead {
+        display: flex;
+        justify-content: space-between;
+
+        .cardSort {
+            display: flex;
+
+            p {
+                font-size: 14px;
+                color: #0c0c0c;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            select {
+                width: 70px;
+                height: 20px;
+                margin-left: 10px;
+                border: 1px solid #555;
+                color: #555;
+            }
+        }
+
+        .cardTitle {
+            p {
+                font-size: 14px;
+                color: #0c0c0c;
+                font-weight: bold;
+                margin: 0;
+            }
+
+        }
+    }
+}
+
+.pieContainer {
+    margin-top: 20px;
+    display: flex;
+
+    .pieCalculation {
+        flex: 2;
+        .pieTitle {
+            font-size: 12px;
+            color: #555;
+            margin: 0;
+        }
+
+        .pieAmount {
+            font-size: 28px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.pieLeftRight{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .pieLeft{
+        width: 50%;
+        .pieSubAmount{
+            font-size: 20px;
+        }
+        
+    }
+    .pieRight{
+        width: 50%;
+        .pieSubAmount{
+            font-size: 20px;
+        }
+    }
+}
+
+.pieGraph{
+    flex: 5;
+    margin-left: 10px;
+}
+
+hr{
+    background-color:rgba(218, 218, 218, 0.534) ;
+    border: none;
+    height: 0.2px;
+}
+
+
+@media only screen and (max-width: 375px){
+    .pieContainer{
+        display: block;
+    }
+    .pieGraph{
+        display:none;
+    }
+
+}

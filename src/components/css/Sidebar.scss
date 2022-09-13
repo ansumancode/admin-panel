@@ -1,0 +1,163 @@
+.sidebar{
+    background-color: #010422;
+    flex: 1;
+    min-height: 100vh;
+    display: block;
+
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(251, 253, 253);
+        padding-left: 10px;
+    }
+
+    .toggleIcon{
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        padding-right: 10px;
+        cursor: pointer;
+        background: #010422;
+        border: none;
+        
+    }
+}
+
+.center{
+    padding-left: 10px;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            color:#ffffff;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #010635;
+            }
+
+            
+
+            span{
+                font-size: 13px;
+                font-weight: 400;
+                margin-left: 10px;
+            }
+        }
+        .title{
+            color: #ffffff;
+            font-size: 10px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.MobileSidebar{
+    display: none;
+}
+
+
+.sideBarItems{
+    color: #fff;
+    padding: 1em;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color .15s;
+    height: auto;
+    padding-left: 0;
+
+}
+.sideBarItems:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
+.opem{
+    height: auto;
+}
+
+.sideBarTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span{
+        display: flex;
+    }
+    
+}
+.icon{
+    font-size: 18px;
+    display: inline-block;
+    width: 2em;
+    align-items: center;
+}
+
+.sidebarContant{
+    padding: .25em;
+    height: 0;
+    overflow: hidden;
+    height: 0;
+}
+
+.sideBarTitle{
+    font-size: 12px;
+    .downIcon{
+        transform: rotate(180deg);
+        transition: transform .3s;
+        font-size: 12px;
+    }
+}
+
+.sideBarItems.open .sidebarContant{
+    height: auto
+}
+.sideBarItems.open .downIcon{
+    transform: rotate(180deg);
+}
+
+
+
+@media only screen and (max-width: 375px){
+    .sidebar{
+        display: none;
+    }
+    .forMobile{
+        display:block !important;
+    }
+    .MobileSidebar{
+        display: block;
+        height: 10vh;
+        background-color: #010422;
+       
+    }
+    .mBtn{
+        background-color: #ffffff00;
+        border: none;
+        color:#fff;
+        
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 750px){
+    .sidebar{
+        width: 30vh;
+        flex: 3;
+    }
+    .sidebarMini{
+        max-width: 14vh !important;
+    }
+}

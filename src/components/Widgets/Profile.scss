@@ -1,0 +1,157 @@
+.widgetRight {
+    padding: 0;
+    flex: 1;
+    margin: 0px;
+
+    .updateCards {
+        background-color: #FFFFFF;
+        padding: 0px;
+        margin: 10px;
+        border-radius: 10px;
+        flex: 1;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+
+    }
+}
+
+.profileImageCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 65px;
+
+    .profileTimeline {
+
+
+        .imageTimeline {
+            width: 100%;
+            //height: 120px;
+            border-radius: 10px 10px 0 0;
+            opacity: 0.6;
+        }
+
+    }
+}
+
+.ProfilePhoto {
+    position: absolute;
+    z-index: 1;
+    bottom: -55px;
+
+    .profileImage {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.profileName {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.profileDesignation {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+    text-align: center;
+}
+
+.profileDataContainer {
+    padding: 10px;
+
+    .profileDataSubContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .profileProducts {
+            text-align: center;
+            .productNumber {
+                color: #000;
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+            }
+
+            .productProfileTitle {
+                font-size: 12px;
+                color: #555;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.profileDataContainer{
+    .profileEarningHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .profileEarningTitle{
+        font-size: 14px;
+    color: #0c0c0c;
+    font-weight: bold;
+    margin: 0;
+    }
+    .iBtn{
+        font-size: 12px;
+        color: #555;
+        margin: 0;
+    }
+
+    .progressBarProfile{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.semicircle-percent-value{
+    font-size: 25px;
+}
+.productProfileTitlePB{
+    font-size: 11px;
+    color: #0c0c0c;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profileCalenderContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+
+    .calenderDate{
+        background-color: rgb(235, 233, 233);
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+        border-radius: 8px;
+        margin-right: 10px;
+
+        .dateNumber{
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .profileMonth{
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    .calenderDes{
+        flex: 4;
+        font-size: 12px;
+        color: #555;
+    }
+}
